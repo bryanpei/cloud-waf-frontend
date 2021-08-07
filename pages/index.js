@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>This is a test for DPS workflow</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
