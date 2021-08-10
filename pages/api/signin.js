@@ -4,7 +4,7 @@ import { connectToDatabase } from '../../lib/mongodb'
 export default withSession(async (req, res) => {
   const { db } = await connectToDatabase()
   const { email, password } = await req.body
-  const user = await db.collection('users').findOne({ email, password });
+  const user = await db.collection('users').findOne({ email, password })
   if (!user) {
     res.status(404).json({message: 'email or password is incorrect.'})
   } else {
