@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <SWRConfig
       value={{
+        refreshInterval: 100,
         fetcher: fetch,
         onError: (err) => {
           console.error(err)

@@ -17,6 +17,7 @@ const MyNavbar = () => {
             <Link href="/" passHref><Nav.Link>Home</Nav.Link></Link>
             {!isLoggedIn && <Link href="/signin" passHref><Nav.Link>Sign In</Nav.Link></Link>}
             {!isLoggedIn && <Link href="/signup" passHref><Nav.Link>Sign Up</Nav.Link></Link>}
+            {isLoggedIn && <Link href="#" passHref><Nav.Link>{user.email}</Nav.Link></Link>}
             {isLoggedIn && <Link href="/api/signout" passHref><Nav.Link>Sign Out</Nav.Link></Link>}
           </Nav>
         </Navbar.Collapse>
