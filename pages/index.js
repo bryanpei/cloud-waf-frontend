@@ -5,6 +5,7 @@ import AddHostForm from '../components/AddHostForm.js'
 import useUser from '../lib/useUser'
 import fetchJson from '../lib/fetchJson'
 import useSWR from 'swr'
+import Router from 'next/router'
 
 const Home = () => {
   const { user } = useUser({ redirectTo: '/signin' })
