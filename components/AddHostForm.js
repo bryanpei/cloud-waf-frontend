@@ -20,7 +20,7 @@ const AddHostForm = ({ errorMsg, onSubmit }) => {
           Add
         </Button>
         <Alert key="info" variant="info" className='mt-3'>
-          Please update the DNS record of your domain, pointing it to 150.136.55.34 
+          Please update the DNS record of your domain, pointing it to 10.1.10.155 
         </Alert>
         {errorMsg &&
         <Alert key="warning" variant="warning" className='mt-3'>
